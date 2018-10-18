@@ -1,0 +1,57 @@
+<% provide :title, t(".title") %>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb d-flex justify-content-center bg-theme">
+    <li class="breadcrumb-item">
+      <a href="index.html" class="text-white">Home</a>
+    </li>
+  </ol>
+</nav>
+<section class="employ-sec">
+  <div class="container">
+    <div class="title-sec-w3layouts_pvt text-center pb-4">
+      <span class="title-wthree">Quick Recruitment Jobs</span>
+    </div>
+    <div class="row pt-lg-5">
+      <div class="col-lg-4">
+        <div class="left_widget">
+          <h3 class="left-widget-job">Hot Jobs</h3>
+        </div>
+        <div class="left_widget">
+          <h3 class="left-widget-job">New Jobs</h3>
+        </div>
+        <div class="left_widget">
+          <h3 class="left-widget-job">Careers</h3>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-sm-6 e-left">
+            <div class="e-desc">
+              <h6><%= link_to "Title", "#" %></h6>
+              <hr>
+              <ul class="desc-list">
+                <li>
+                  <span>Company:</span>
+                  loremipsum
+                </li>
+                <li>
+                  <span>Salary:</span>
+                  Negotiable
+                </li>
+                <li>
+                  <span>Experience</span>
+                  Expert
+                </li>
+                <li>
+                  <span>Expire:</span>
+                  26/10/2018
+                </li>
+              </ul>
+              <%= link_to "Apply for job", "#", class: "btn wthree-bnr-btn text-capitalize" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

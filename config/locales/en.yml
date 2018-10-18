@@ -1,1 +1,14 @@
 en:
+  base_title: "Job Fair"
+  signup: "Sign up"
+  login: "Login"
+  slogan: "A better career is out there. We'll help you find it to use."
+  about: "About"
+  contact: "Contact"
+  help: "Help"
+  address: "Address"
+  find_by_job: "Looking For Job"
+  find_by_place: "place to work"
+  static_pages:
+    home:
+      title: "Home"
