@@ -1,0 +1,46 @@
+<% provide :title,  t(".job")  %>
+<h1><%= t ".job" %></h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with model: @job, local: true do |f| %>
+      <%= render "shared/error_messages", object: f.object %>
+
+      <%= f.label :title, t(".title") %>
+      <%= f.text_area :title, class: "form-control", placeholder: "abc" %>
+
+      <%= f.label :career_id, t(".career_id") %>
+      <%= f.select :career_id, Career.all.collect {|p| [ p.name, p.id ]},
+        include_blank: t(".choose_career"), class: "form-control" %>
+
+      <%= f.label :salary, t(".salary") %>
+      <%= f.text_field :salary, class: "form-control" %>
+
+      <%= f.label :rank, t(".rank") %>
+      <%= f.text_field :rank, class: "form-control" %>
+
+      <%= f.label :skill, t(".skill") %>
+      <%= f.text_field :skill, class: "form-control" %>
+
+      <%= f.label :language, t(".language") %>
+      <%= f.text_field :language, class: "form-control" %>
+
+      <%= f.label :amount, t(".amount") %>
+      <%= f.text_field :amount, class: "form-control" %>
+
+      <%= f.label :experience, t(".experience") %>
+      <%= f.text_area :experience, class: "form-control" %>
+
+      <%= f.label :description, t(".description") %>
+      <%= f.text_area :description, class: "form-control" %>
+
+      <%= f.label :publish_date, t(".publish_date") %>
+      <%= f.date_field :publish_date, class: "form-control" %>
+
+      <%= f.label :expiration_date, t(".expiration_date") %>
+      <%= f.date_field :expiration_date, class: "form-control" %>
+
+      <%= f.submit t(".create_job") , class: "btn btn-primary button" %>
+    <% end %>
+  </div>
+</div>

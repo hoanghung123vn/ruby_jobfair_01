@@ -1,4 +1,6 @@
 en:
+  applications:
+    login: "Please login to continue"
   base_title: "Job Fair"
   signup: "Sign up"
   login: "Login"
@@ -13,6 +15,10 @@ en:
     home:
       title: "Home"
   users:
+    roles:
+      admin: "Admin"
+      employeer: "Employeer"
+      candidate: "Candidate"
     new:
       info: "Infomation"
       signup: "Signup"
@@ -33,6 +39,7 @@ en:
     create:
       error: "Create account fail"
       success: "Welcome to Finding Jobs"
+    find_user:
       not_found: "User not found!"
   error:
     contain: "Contain"
@@ -92,3 +99,22 @@ your password will stay as it is."
   subject1: "Account activation"
   subject2: "Reset password"
   require_check_email: "Please check your email to activate your account."
+  jobs:
+    new:
+      job: "Create Job"
+      title: "Title"
+      career_id: "Career"
+      salary: "Salary"
+      rank: "Rank"
+      skill: "Skill"
+      language: "Language"
+      amount: "Amount"
+      experience: "Experience"
+      description: "Description"
+      publish_date: "Publish date"
+      expiration_date: "Expiration date"
+      create_job: "Create Job"
+      choose_career: "Choose career"
+    create:
+      error: "Create career fail"
+      success: "Create career success"

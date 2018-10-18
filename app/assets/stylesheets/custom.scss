@@ -23,7 +23,6 @@ h1 {
 
 h2 {
   font-size: 1.2em;
-  letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
@@ -47,15 +46,25 @@ p {
   }
 }
 
+.button {
+  margin: 20px 0;
+}
+
+input[type=radio] {
+  width: 10% !important;
+}
+
 input, textarea, select, .uneditable-input {
   border: 1px solid $gray-ligth-mid;
   width: 100%;
+  margin-bottom: 15px;
   @include box_sizing;
 }
 
 input {
   height: auto !important;
 }
+
 /* header */
 
 #logo {
