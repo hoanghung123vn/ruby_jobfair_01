@@ -1,0 +1,14 @@
+vi:
+  base_title: "Tìm việc làm"
+  signup: "Đăng ký"
+  login: "Đăng nhập"
+  slogan: "Có nhiều công việc tốt hơn ở ngoài kia. Chúng tôi sẽ giúp bạn tìm kiếm dễ dàng."
+  about: "Giới thiệu"
+  contact: "Liên lạc"
+  help: "Trợ giúp"
+  address: "Địa chỉ"
+  find_by_job: "Tìm kiếm theo ngành nghề"
+  find_by_place: "Tìm kiếm theo vị trí"
+  static_pages:
+    home:
+      title: "Trang chủ"
