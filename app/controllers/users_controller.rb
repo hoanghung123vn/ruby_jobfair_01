@@ -11,10 +11,10 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      flash.now[:info] = t ".success"
-      redirect_to
+      flash[:info] = t ".success"
+      redirect_to root_path
     else
-      flash.now[:danger] = t ".error"
+      flash[:danger] = t ".error"
       render :new
     end
   end
@@ -26,7 +26,7 @@ class UsersController < ApplicationController
 
     return if @user
     flash[:danger] = t ".not_found"
-    redirect_to
+    redirect_to root_path
   end
 
   def user_params
