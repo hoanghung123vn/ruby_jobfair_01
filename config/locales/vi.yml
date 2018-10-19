@@ -12,3 +12,28 @@ vi:
   static_pages:
     home:
       title: "Trang chủ"
+  users:
+    new:
+      info: "Thông Tin"
+      signup: "Đăng kí"
+      role: "Vai trò"
+      employeer: "Nhà tuyển dụng"
+      candidate: "Ứng viên"
+      name: "Tên"
+      email: "Email"
+      birthday: "Ngày sinh"
+      gender: "Giới tính"
+      male: "Nam"
+      female: "Nữ"
+      phone: "Số điện thoại"
+      address: "Địa chỉ"
+      password: "Mật khẩu"
+      repass: "Xác nhận mật khẩu"
+      create_acc: "Tạo tài khoản"
+    create:
+      error: "Tạo tài khoản thất bại"
+      success: "Tạo tài khoản thành công"
+      not_found: "Không tìm thấy người dùng!"
+  error:
+    contain: "Có"
+    errors: "lỗi"

@@ -12,3 +12,28 @@ en:
   static_pages:
     home:
       title: "Home"
+  users:
+    new:
+      info: "Infomation"
+      signup: "Signup"
+      role: "Role"
+      employeer: "Employeer"
+      candidate: "Candidate"
+      name: "Name"
+      email: "Email"
+      birthday: "Birthday"
+      gender: "Gender"
+      male: "Male"
+      female: "Female"
+      phone: "Phone"
+      address: "Address"
+      password: "Password"
+      repass: "Confirmation"
+      create_acc: "Create my account"
+    create:
+      error: "Create account fail"
+      success: "Welcome to Finding Jobs"
+      not_found: "User not found!"
+  error:
+    contain: "Contain"
+    errors: "errors"
