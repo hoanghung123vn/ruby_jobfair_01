@@ -2,6 +2,8 @@ vi:
   applications:
     login: "Vui lòng đăng nhập"
   base_title: "Tìm việc làm"
+  create_cv: "Tạo hồ sơ"
+  create_job: "Tạo tin tuyển dụng"
   signup: "Đăng ký"
   login: "Đăng nhập"
   slogan: "Có nhiều công việc tốt hơn ở ngoài kia. Chúng tôi sẽ giúp bạn tìm kiếm dễ dàng."
@@ -9,8 +11,11 @@ vi:
   contact: "Liên lạc"
   help: "Trợ giúp"
   address: "Địa chỉ"
+  createCV: "Tạo CV"
+  createJob: "Tạo Job"
   find_by_job: "Tìm kiếm theo ngành nghề"
   find_by_place: "Tìm kiếm theo vị trí"
+  r_login: "Yêu cầu đăng nhập!"
   static_pages:
     home:
       title: "Trang chủ"
@@ -118,3 +123,16 @@ vi:
     create:
       error: "Tạo việc làm thất bại"
       success: "Tạo việc làm thành công"
+  curriculum_vitaes:
+    new:
+      title: "Tạo hồ sơ"
+      target: "Mục tiêu"
+      skill: "Kỹ năng"
+      level: "Trình độ"
+      experience: "Kinh nghiệm"
+      language: "Ngoại ngữ"
+      create: "Tạo mới"
+      permit: "Bạn không có quyền tạo CV"
+    create:
+      success: "Đã tạo CV"
+      fail: "Failed to create CV"

@@ -15,8 +15,7 @@ class ApplicationController < ActionController::Base
 
   def logged_in_user
     return if logged_in?
-
-    flash[:danger] = t ".login"
+    flash[:danger] = t "r_login"
     redirect_to login_url
   end
 end

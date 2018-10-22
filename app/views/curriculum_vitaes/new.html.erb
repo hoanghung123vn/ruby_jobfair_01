@@ -1,0 +1,30 @@
+<% provide:title, t(".title") %>
+<h1><%= t ".title" %></h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with model: @curriculum_vitae, local: true do |f| %>
+      <%= render "shared/error_messages", object: f.object %>
+
+      <%= f.label :target, t(".target") %>
+      <%= f.text_area :target, class: "form-control" %>
+
+      <%= f.label :skill, t(".skill") %>
+      <%= f.text_field :skill, class: "form-control" %>
+
+      <%= f.label :level, t(".level") %>
+      <%= f.text_field :level, class: "form-control" %>
+
+      <%= f.label :experience, t(".experience") %>
+      <%= f.text_area :experience, class: "form-control" %>
+
+      <%= f.label :language, t(".language") %>
+      <%= f.text_field :language, class: "form-control" %>
+
+      <%= f.label :note, t(".note") %>
+      <%= f.text_field :note, class: "form-control" %>
+
+      <%= f.submit t(".create"), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
