@@ -80,6 +80,7 @@ vi:
       log_in: "Đăng nhập"
       manager: "Quản lý"
       add_career: "Thêm nghề nghiệp"
+      careers: "Danh sách nghề nghiệp"
   password_resets:
     edit:
       reset_pwd: "Đặt lại mật khẩu"
@@ -242,3 +243,25 @@ vi:
       career_name: "Tên nghề ngiệp"
       description: "Mô tả"
       create_career: "Tạo nghề nghiệp"
+    show:
+      not_found_careers: "Không tìm thấy danh sách nghề nghiệp"
+      description: "Mô tả: "
+    destroy:
+      delete_sucess: "Xóa thành công"
+      delete_fail: "Xóa thất bại"
+    index:
+      career_list: "Danh sách nghề nghiệp"
+      delete: "Xóa"
+      confirm: "Xác nhận"
+      edit: "Edit"
+    edit:
+      edit_career: "Chỉnh sửa nghề ngiệp"
+      career_name: "Tên nghề ngiệp"
+      description: "Mô tả"
+      update: "Cập nhật"
+    update:
+      update_success: "Cập nhật thành công!"
+      update_fail: "Cập nhật thất bại"
+  will_paginate:
+    previous_label: "Trước"
+    next_label: "Sau"
