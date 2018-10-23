@@ -76,6 +76,8 @@ en:
       settings: "Settings"
       log_out: "Log out"
       log_in: "Log in"
+      manager: "Manager"
+      add_career: "Add career"
   password_resets:
     edit:
       reset_pwd: "Reset Passsword"
@@ -168,3 +170,12 @@ your password will stay as it is."
       x_days: "%{count} days"
       x_months: "%{count} months"
       about_x_years: "%{count} years"
+  careers:
+    create:
+      create_career_success: "Created career!"
+      error: "Create failed!"
+    new:
+      add_career: "Add career"
+      career_name: "Career name"
+      description: "Description"
+      create_career: "Create career"
