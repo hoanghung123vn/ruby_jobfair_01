@@ -1,4 +1,6 @@
 vi:
+  applications:
+    login: "Vui lòng đăng nhập"
   base_title: "Tìm việc làm"
   signup: "Đăng ký"
   login: "Đăng nhập"
@@ -13,6 +15,10 @@ vi:
     home:
       title: "Trang chủ"
   users:
+    roles:
+      admin: "Quản trị viên"
+      employeer: "Nhà tuyển dụng"
+      candidate: "Ứng viên"
     show:
       info: "Thông Tin"
     new:
@@ -34,6 +40,7 @@ vi:
     create:
       error: "Tạo tài khoản thất bại"
       success: "Tạo tài khoản thành công"
+    find_user:
       not_found: "Không tìm thấy người dùng!"
   error:
     contain: "Có"
@@ -92,3 +99,22 @@ vi:
   subject1: "Kích hoạt tài khoản"
   subject2: "Đặt lại mật khẩu"
   require_check_email: "Please check your email to activate your account."
+  jobs:
+    new:
+      job: "Tạo Việc Làm"
+      title: "Tiêu đề"
+      career_id: "Ngành nghề"
+      salary: "Mức lương"
+      rank: "Chức vụ"
+      skill: "Kỹ năng"
+      language: "Ngôn ngữ"
+      amount: "Số lượng"
+      experience: "Kinh nghiệm"
+      description: "Mô tả"
+      publish_date: "Ngày đăng tin"
+      expiration_date: "Ngày hết hạn"
+      create_job: "Tạo việc làm"
+      choose_career: "Chọn ngành nghề"
+    create:
+      error: "Tạo việc làm thất bại"
+      success: "Tạo việc làm thành công"
