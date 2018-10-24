@@ -1,6 +1,5 @@
 en:
-  applications:
-    login: "Please login to continue"
+  r_login: "Please login to continue"
   base_title: "Job Fair"
   signup: "Sign up"
   login: "Login"
@@ -24,12 +23,15 @@ en:
       candidate: "Candidate"
     show:
       info: "Infomation"
+      name: "Name"
       email: "Email"
       birthday: "Birthday"
       gender: "Gender"
       phone: "Phone"
       address: "Address"
-      myCV: "My CV"
+      myCV: "My Curriculum Vitaes"
+      myJob: "Jobs was post"
+      not_found: "User not found!"
     new:
       signup: "Signup"
       role: "Role"
@@ -49,8 +51,6 @@ en:
     create:
       error: "Create account fail"
       success: "Welcome to Finding Jobs"
-    find_user:
-      not_found: "User not found!"
   error:
     contain: "Contain"
     errors: "errors"
@@ -127,9 +127,57 @@ your password will stay as it is."
       expiration_date: "Expiration date"
       create_job: "Create Job"
       choose_career: "Choose career"
+      not_permit: "You are not permission to access"
     create:
       error: "Create career fail"
       success: "Create career success"
+    job:
+      company: "Company"
+      salary: "Salary"
+      experience: "Experience"
+      expiration_date: "Expire"
+      apply: "Apply for Job"
+    update:
+      error: "Update career fail"
+      success: "Update career success"
+    destroy:
+      error: "Delete career fail"
+      success: "Delete career success"
+    edit:
+      update_job: "Update Working Information"
+      update_btn: "Update Job"
+      title: "Title"
+      career_id: "Career"
+      salary: "Salary"
+      rank: "Rank"
+      skill: "Skill"
+      language: "Language"
+      amount: "Amount"
+      experience: "Experience"
+      description: "Description"
+      publish_date: "Publish date"
+      expiration_date: "Expiration date"
+      create_job: "Create Job"
+      choose_career: "Choose career"
+    show:
+      company: "Company"
+      career: "Career"
+      salary: "Salary"
+      rank: "Rank"
+      skill: "Skill"
+      language: "Language"
+      amount: "Amount"
+      experience: "Experience"
+      description: "Description"
+      publish_date: "Publish date"
+      expiration_date: "Expiration date"
+      phone: "Phone Number"
+      address: "Address"
+      not_found: "Job not found!"
+      sure: "Are you sure to delete this job?"
+      update: "Update"
+      delete: "Delete"
+      user_employeer: "Not found employeer"
   curriculum_vitaes:
     curriculum_vitae:
       create_at: "Created at"

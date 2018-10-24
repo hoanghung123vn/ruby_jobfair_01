@@ -47,10 +47,12 @@
         <h5><%= t ".expiration_date" %></h5><hr>
         <p><%= @job.expiration_date %></p><br>
         <div class="button_cn">
+        <% if @user.current_user? current_user %>
           <%= link_to t(".update"), edit_job_path,
             class: "btn btn-lg btn-success" %>
           <%= link_to t(".delete"), job_path, method: :delete,
             data: {confirm: t(".sure")}, class: "btn btn-lg btn-danger" %>
+        <% end %>
         </div>
       </div>
     </div>

@@ -5,6 +5,9 @@
       <h1>
         <%= t ".info" %>
       </h1>
+      <p><%= t ".name" %>:
+        <%= @user.name %>
+      </p>
       <p><%= t ".email" %>:
         <%= @user.email %>
       </p>
@@ -28,6 +31,13 @@
         <h3><%= t ".myCV" %> (<%= @user.curriculum_vitaes.count %>)</h3>
         <ol class="cv">
           <%= render @curriculum_vitaes %>
+        </ol>
+      <% end %>
+    <% else %>
+      <% if @user.jobs.any? %>
+        <h3><%= t ".myJob" %> (<%= @user.jobs.count %>)</h3>
+        <ol>
+          <%= render @user.jobs %>
         </ol>
       <% end %>
     <% end %>
