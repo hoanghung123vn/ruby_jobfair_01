@@ -1,0 +1,58 @@
+<% provide :title, @job.title %>
+<div >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <%= image_tag "evolable-asia-logo.png" %>
+      </div>
+      <div class="col-md-9 job_info">
+        <h1><%= @job.title%></h1>
+
+        <h5><%= t ".company" %></h5><hr>
+        <p><%= @user.name %></p><br>
+
+        <h5><%= t ".career" %></h5><hr>
+        <p><%= @job.career.name %></p><br>
+
+        <h5><%= t ".salary" %></h5><hr>
+        <p><%= @job.salary %></p><br>
+
+        <h5><%= t ".amount" %></h5><hr>
+        <p><%= @job.amount %></p><br>
+
+        <h5><%= t ".rank" %></h5><hr>
+        <p><%= @job.rank %></p><br>
+
+        <h5><%= t ".skill" %></h5><hr>
+        <p><%= @job.skill %></p><br>
+
+        <h5><%= t ".language" %></h5><hr>
+        <p><%= @job.language %></p><br>
+
+        <h5><%= t ".experience" %></h5><hr>
+        <p><%= @job.experience %></p><br>
+
+        <h5><%= t ".description" %></h5><hr>
+        <p><%= @job.description %></p><br>
+
+        <h5><%= t ".phone" %></h5><hr>
+        <p><%= @user.phone %></p><br>
+
+        <h5><%= t ".address" %></h5><hr>
+        <p><%= @user.address %></p><br>
+
+        <h5><%= t ".publish_date" %></h5><hr>
+        <p><%= @job.publish_date %></p><br>
+
+        <h5><%= t ".expiration_date" %></h5><hr>
+        <p><%= @job.expiration_date %></p><br>
+        <div class="button_cn">
+          <%= link_to t(".update"), edit_job_path,
+            class: "btn btn-lg btn-success" %>
+          <%= link_to t(".delete"), job_path, method: :delete,
+            data: {confirm: t(".sure")}, class: "btn btn-lg btn-danger" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

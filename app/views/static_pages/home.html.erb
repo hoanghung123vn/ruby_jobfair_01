@@ -18,32 +18,9 @@
       </div>
       <div class="col-lg-8">
         <div class="row">
-          <div class="col-sm-6 e-left">
-            <div class="e-desc">
-              <h6><%= link_to "Title", "#" %></h6>
-              <hr>
-              <ul class="desc-list">
-                <li>
-                  <span>Company:</span>
-                  loremipsum
-                </li>
-                <li>
-                  <span>Salary:</span>
-                  Negotiable
-                </li>
-                <li>
-                  <span>Experience</span>
-                  Expert
-                </li>
-                <li>
-                  <span>Expire:</span>
-                  26/10/2018
-                </li>
-              </ul>
-              <%= link_to "Apply for job", "#", class: "btn wthree-bnr-btn text-capitalize" %>
-            </div>
-          </div>
+          <%= render @jobs %>
         </div>
+        <%= paginate @jobs, theme: "twitter-bootstrap-3" %>
       </div>
     </div>
   </div>
