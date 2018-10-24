@@ -50,6 +50,10 @@ p {
   margin: 20px 0;
 }
 
+.button_cn {
+  text-align: center;
+}
+
 input[type=radio] {
   width: 10% !important;
 }
@@ -129,4 +133,22 @@ input {
 .login {
   margin:0 auto;
   position:relative;
+}
+
+.cv {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid $gray-lighter;
+  }
+  .target {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
 }

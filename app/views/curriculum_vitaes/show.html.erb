@@ -1,0 +1,51 @@
+<% provide :title, @curriculum_vitae.target %>
+<div >
+  <div class="container">
+    <h1><%= @curriculum_vitae.target %></h1>
+    <div class="row">
+      <div class="col-md-6 curriculum_vitae_info">
+        <h5><%= t ".name" %></h5><hr>
+        <p><%= @user.name %></p><br>
+
+        <h5><%= t ".email" %></h5><hr>
+        <p><%= @user.email %></p><br>
+
+        <h5><%= t ".birthday" %></h5><hr>
+        <p><%= @user.birthday %></p><br>
+
+        <h5><%= t ".gender" %></h5><hr>
+        <p><%= @user.phone %></p><br>
+
+        <h5><%= t ".address" %></h5><hr>
+        <p><%= @user.address %></p><br>
+      </div>
+      <div class="col-md-6">
+        <h5><%= t ".target" %></h5><hr>
+        <p><%= @curriculum_vitae.target %></p><br>
+
+        <h5><%= t ".skill" %></h5><hr>
+        <p><%= @curriculum_vitae.skill %></p><br>
+
+        <h5><%= t ".level" %></h5><hr>
+        <p><%= @curriculum_vitae.level %></p><br>
+
+        <h5><%= t ".experience" %></h5><hr>
+        <p><%= @curriculum_vitae.experience %></p><br>
+
+        <h5><%= t ".language" %></h5><hr>
+        <p><%= @curriculum_vitae.language %></p><br>
+
+        <h5><%= t ".note" %></h5><hr>
+        <p><%= @curriculum_vitae.note %></p><br>
+      </div>
+
+    </div>
+    <div class="button_cn">
+      <% if @user.current_user? current_user %>
+      <%= link_to t(".update"), "#", class: "btn btn-lg btn-success" %>
+      <%= link_to t(".delete"), "#", method: :delete,
+       data: {confirm: t(".sure")}, class: "btn btn-lg btn-danger" %>
+      <% end %>
+    </div>
+  </div>
+</div>

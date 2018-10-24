@@ -1,25 +1,35 @@
 <% provide :title, @user.name %>
 <div class="row">
-  <aside class="col-md-8">
+  <aside class="col-md-6">
     <section class="user_info">
       <h1>
         <%= t ".info" %>
       </h1>
-      <p>
+      <p><%= t ".email" %>:
         <%= @user.email %>
       </p>
-      <p>
+      <p><%= t ".birthday" %>:
         <%= @user.birthday %>
       </p>
-      <p>
+      <p><%= t ".gender" %>:
         <%= @user.gender %>
       </p>
-      <p>
+      <p><%= t ".phone" %>:
         <%= @user.phone %>
       </p>
-      <p>
+      <p><%= t ".address" %>:
         <%= @user.address %>
       </p>
     </section>
   </aside>
+  <div class="col-md-6">
+    <% if @user.candidate? %>
+      <% if @user.curriculum_vitaes.any? %>
+        <h3><%= t ".myCV" %> (<%= @user.curriculum_vitaes.count %>)</h3>
+        <ol class="cv">
+          <%= render @curriculum_vitaes %>
+        </ol>
+      <% end %>
+    <% end %>
+  </div>
 </div>

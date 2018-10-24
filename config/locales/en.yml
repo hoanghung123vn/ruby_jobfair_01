@@ -22,8 +22,15 @@ en:
       admin: "Admin"
       employeer: "Employeer"
       candidate: "Candidate"
-    new:
+    show:
       info: "Infomation"
+      email: "Email"
+      birthday: "Birthday"
+      gender: "Gender"
+      phone: "Phone"
+      address: "Address"
+      myCV: "My CV"
+    new:
       signup: "Signup"
       role: "Role"
       employeer: "Employeer"
@@ -122,6 +129,9 @@ your password will stay as it is."
       error: "Create career fail"
       success: "Create career success"
   curriculum_vitaes:
+    curriculum_vitae:
+      create_at: "Created at"
+      ago: "ago"
     new:
       title: "Create Curriculum Vitae"
       target: "Target"
@@ -134,3 +144,27 @@ your password will stay as it is."
     create:
       success: "Created CV"
       fail: "Failed to create CV"
+    show:
+      name: "Name"
+      email: "Email"
+      birthday: "Birthday"
+      gender: "Gender"
+      phone: "Phone"
+      address: "Address"
+      target: "Target"
+      skill: "Skill"
+      level: "Level"
+      experience: "Experience"
+      language: "Language"
+      note: "Note"
+      update: "Update"
+      delete: "Delete"
+      not_found: "Not found CV"
+  datetime:
+    distance_in_words:
+      less_than_x_minutes: "less than %{count} minutes"
+      x_minutes: "%{count} minutes"
+      about_x_hours: "%{count} hours"
+      x_days: "%{count} days"
+      x_months: "%{count} months"
+      about_x_years: "%{count} years"

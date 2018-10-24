@@ -19,6 +19,17 @@ class CurriculumVitaesController < ApplicationController
     end
   end
 
+  def show
+    @curriculum_vitae = CurriculumVitae.find_by id: params[:id]
+
+    if @curriculum_vitae
+      @user = @curriculum_vitae.users.find_by role: "candidate"
+    else
+      flash[:danger] = t ".not_found"
+      redirect_to root_path
+    end
+  end
+
   private
 
   def cv_params
