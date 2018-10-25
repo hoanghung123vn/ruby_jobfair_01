@@ -1,0 +1,8 @@
+<li>
+  <span class="target">
+    <%= link_to curriculum_vitae.target, curriculum_vitae %>
+  </span>
+  <span class="timestamp">
+    <%= t ".created_at" %> <%= time_ago_in_words curriculum_vitae.created_at %> <%= t ".ago" %>.
+  </span>
+</li>

@@ -26,6 +26,12 @@ vi:
       candidate: "Ứng viên"
     show:
       info: "Thông Tin"
+      email: "Email"
+      birthday: "Ngày sinh"
+      gender: "Giới tính"
+      phone: "Số điện thoại"
+      address: "Địa chỉ"
+      myCV: "CV của tôi"
     new:
       signup: "Đăng kí"
       role: "Vai trò"
@@ -124,6 +130,9 @@ vi:
       error: "Tạo việc làm thất bại"
       success: "Tạo việc làm thành công"
   curriculum_vitaes:
+    curriculum_vitae:
+      created_at: "Tạo lúc"
+      ago: "trước"
     new:
       title: "Tạo hồ sơ"
       target: "Mục tiêu"
@@ -136,3 +145,27 @@ vi:
     create:
       success: "Đã tạo CV"
       fail: "Failed to create CV"
+    show:
+      name: "Họ tên"
+      email: "Email"
+      birthday: "Ngày sinh"
+      gender: "Giới tính"
+      phone: "Số điện thoại"
+      address: "Địa chỉ"
+      target: "Mục tiêu"
+      skill: "Kỹ năng"
+      level: "Trình độ"
+      experience: "Kinh nghiệm"
+      language: "Ngoại ngữ"
+      note: "Ghi chú"
+      update: "Cập nhật"
+      delete: "Xóa"
+      not_found: "Không tìm thấy CV"
+  datetime:
+    distance_in_words:
+      less_than_x_minutes: "chưa đầy %{count} phút"
+      x_minutes: "%{count} phút"
+      about_x_hours: "%{count} giờ"
+      x_days: "%{count} ngày"
+      x_months: "%{count} tháng"
+      about_x_years: "%{count} năm"

@@ -56,6 +56,10 @@ class User < ApplicationRecord
     update remember_digest: nil
   end
 
+  def current_user? user
+    self == user
+  end
+
   def activate
     update activated: true, activated_at: Time.zone.now
   end
