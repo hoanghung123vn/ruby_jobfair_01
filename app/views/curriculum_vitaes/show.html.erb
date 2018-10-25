@@ -42,7 +42,8 @@
     </div>
     <div class="button_cn">
       <% if @user.current_user? current_user %>
-      <%= link_to t(".update"), "#", class: "btn btn-lg btn-success" %>
+      <%= link_to t(".update"), edit_curriculum_vitae_path,
+       class: "btn btn-lg btn-success" %>
       <%= link_to t(".delete"), "#", method: :delete,
        data: {confirm: t(".sure")}, class: "btn btn-lg btn-danger" %>
       <% end %>
