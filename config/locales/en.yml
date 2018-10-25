@@ -160,6 +160,16 @@ your password will stay as it is."
       update: "Update"
       delete: "Delete"
       not_found: "Not found CV"
+    edit:
+      title: "Update CV"
+      update: "Update"
+      permit: "Not permit to create CV"
+    update:
+      success: "Updated success"
+      failed: "Update failed"
+      permit: "Not permit to create CV"
+    find_cv:
+      not_found: "Not found CV"
   datetime:
     distance_in_words:
       less_than_x_minutes: "less than %{count} minutes"

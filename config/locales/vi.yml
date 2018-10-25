@@ -141,7 +141,7 @@ vi:
       experience: "Kinh nghiệm"
       language: "Ngoại ngữ"
       create: "Tạo mới"
-      permit: "Bạn không có quyền tạo CV"
+      permit: "Bạn không có quyền"
     create:
       success: "Đã tạo CV"
       fail: "Failed to create CV"
@@ -160,6 +160,16 @@ vi:
       note: "Ghi chú"
       update: "Cập nhật"
       delete: "Xóa"
+      not_found: "Không tìm thấy CV"
+    edit:
+      title: "Cập nhật CV"
+      update: "Cập nhật"
+      permit: "Bạn không có quyền"
+    update:
+      success: "Cập nhật thành công"
+      failed: "Cập nhật thất bại"
+      permit: "Bạn không có quyền"
+    find_cv:
       not_found: "Không tìm thấy CV"
   datetime:
     distance_in_words:

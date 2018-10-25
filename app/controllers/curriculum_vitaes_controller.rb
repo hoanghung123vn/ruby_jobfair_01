@@ -1,5 +1,8 @@
 class CurriculumVitaesController < ApplicationController
-  before_action :logged_in_user, :candidate_user, only: %i(new create)
+  before_action :logged_in_user, :candidate_user, only:
+   %i(new create edit update)
+  before_action :find_cv, only: %i(show edit update)
+  before_action :correct_user, only: %i(edit update)
 
   def new
     @curriculum_vitae = current_user.curriculum_vitaes.new
@@ -20,17 +23,30 @@ class CurriculumVitaesController < ApplicationController
   end
 
   def show
-    @curriculum_vitae = CurriculumVitae.find_by id: params[:id]
+    @user = @curriculum_vitae.users.find_by role: "candidate"
+  end
 
-    if @curriculum_vitae
-      @user = @curriculum_vitae.users.find_by role: "candidate"
+  def edit; end
+
+  def update
+    if @curriculum_vitae.update cv_params
+      flash[:success] = t ".success"
+      redirect_to @curriculum_vitae
     else
-      flash[:danger] = t ".not_found"
-      redirect_to root_path
+      flash[:danger] = t ".failed"
+      render :edit
     end
   end
 
   private
+
+  def find_cv
+    @curriculum_vitae = CurriculumVitae.find_by id: params[:id]
+
+    return if @curriculum_vitae
+    flash[:danger] = t ".not_found"
+    redirect_to root_path
+  end
 
   def cv_params
     params.require(:curriculum_vitae).permit :target, :skill, :level,
@@ -39,6 +55,14 @@ class CurriculumVitaesController < ApplicationController
 
   def candidate_user
     return if current_user.candidate?
+    flash[:danger] = t ".permit"
+    redirect_to root_url
+  end
+
+  def correct_user
+    @cv = current_user.curriculum_vitaes.find_by id: @curriculum_vitae.id
+
+    return if @cv
     flash[:danger] = t ".permit"
     redirect_to root_url
   end
