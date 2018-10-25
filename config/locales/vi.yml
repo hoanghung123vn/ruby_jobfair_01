@@ -163,6 +163,7 @@ vi:
       update: "Cập nhật"
       delete: "Xóa"
       not_found: "Không tìm thấy CV"
+      sure: "Xác nhận?"
     edit:
       title: "Cập nhật CV"
       update: "Cập nhật"
@@ -171,6 +172,9 @@ vi:
       success: "Cập nhật thành công"
       failed: "Cập nhật thất bại"
       permit: "Bạn không có quyền"
+    destroy:
+      success: "Xóa thành công"
+      failed: "Xóa thất bại"
     find_cv:
       not_found: "Không tìm thấy CV"
   datetime:
