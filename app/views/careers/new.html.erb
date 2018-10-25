@@ -1,0 +1,18 @@
+<% provide :title,  t(".add_career")  %>
+<h1><%= t ".add_career" %></h1>
+
+<div class="row signup">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_with model: @career, url: careers_path, local: true do |f| %>
+      <%= render "shared/error_messages", object: f.object %>
+
+      <%= f.label :name, t(".career_name") %>
+      <%= f.text_field :name, class: "form-control" %>
+
+      <%= f.label :description, t(".description") %>
+      <%= f.text_area :description, class: "form-control" %>
+
+      <%= f.submit t(".create_career") , class: "btn btn-primary submit" %>
+    <% end %>
+  </div>
+</div>

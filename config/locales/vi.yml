@@ -72,12 +72,14 @@ vi:
       language2: "Tiếng Việt"
       home: "Trang chủ"
       help: "Trợ giúp"
-      users: "Danh sách người dùng"
+      users: "Thành viên"
       account: "Tài khoản"
       profile: "Hồ sơ cá nhân"
       settings: "Cài đặt"
       log_out: "Đăng xuất"
       log_in: "Đăng nhập"
+      manager: "Quản lý"
+      add_career: "Thêm nghề nghiệp"
   password_resets:
     edit:
       reset_pwd: "Đặt lại mật khẩu"
@@ -179,3 +181,12 @@ vi:
       x_days: "%{count} ngày"
       x_months: "%{count} tháng"
       about_x_years: "%{count} năm"
+  careers:
+    create:
+      create_career_success: "Đã tạo nghề nghiệp!"
+      error: "Tạo thất bại!"
+    new:
+      add_career: "Thêm nghề nghiệp"
+      career_name: "Tên nghề ngiệp"
+      description: "Mô tả"
+      create_career: "Tạo nghề nghiệp"
