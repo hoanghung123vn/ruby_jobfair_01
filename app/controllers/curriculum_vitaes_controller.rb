@@ -1,8 +1,8 @@
 class CurriculumVitaesController < ApplicationController
   before_action :logged_in_user, :candidate_user, only:
-   %i(new create edit update)
-  before_action :find_cv, only: %i(show edit update)
-  before_action :correct_user, only: %i(edit update)
+   %i(new create edit update destroy)
+  before_action :find_cv, only: %i(show edit update destroy)
+  before_action :correct_user, only: %i(edit update destroy)
 
   def new
     @curriculum_vitae = current_user.curriculum_vitaes.new
@@ -36,6 +36,15 @@ class CurriculumVitaesController < ApplicationController
       flash[:danger] = t ".failed"
       render :edit
     end
+  end
+
+  def destroy
+    if @curriculum_vitae.destroy
+      flash[:success] = t ".success"
+    else
+      flash[:danger] = t ".failed"
+    end
+    redirect_to root_url
   end
 
   private

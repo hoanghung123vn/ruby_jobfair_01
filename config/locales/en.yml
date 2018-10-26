@@ -162,6 +162,7 @@ your password will stay as it is."
       update: "Update"
       delete: "Delete"
       not_found: "Not found CV"
+      sure: "Sure?"
     edit:
       title: "Update CV"
       update: "Update"
@@ -170,6 +171,9 @@ your password will stay as it is."
       success: "Updated success"
       failed: "Update failed"
       permit: "Not permit to create CV"
+    destroy:
+      success: "Deleted success"
+      failed: "Delete failed"
     find_cv:
       not_found: "Not found CV"
   datetime:
