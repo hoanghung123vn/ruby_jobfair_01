@@ -1,14 +1,14 @@
 <% provide :title,  t(".signup")  %>
 <h1><%= t ".signup" %></h1>
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
+<div class="row form_cn">
+  <div class="col-md-8 col-md-offset-4">
     <%= form_with model: @user, url: signup_path, local: true do |f| %>
       <%= render "shared/error_messages", object: f.object %>
 
       <%= f.label :role, t(".role") %><br>
       <% User.roles.keys.each do |key| %>
-        <%= f.radio_button :role, key %>
+        <%= f.radio_button :role, key, class: "radio_btn" %>
         <%= f.label key.capitalize %>
       <% end %><br>
 
@@ -22,9 +22,9 @@
       <%= f.date_field :birthday, class: "form-control" %>
 
       <%= f.label :gender, t(".gender") %><br>
-      <% User.genders.keys.each do |gender| %>
-        <%= f.radio_button :gender, gender.to_s %>
-        <%= f.label gender.to_sym %>
+      <% User.genders.keys.each do |key| %>
+        <%= f.radio_button :gender, key, class: "radio_btn" %>
+        <%= f.label key.capitalize %>
       <% end %><br>
 
       <%= f.label :phone, t(".phone") %>

@@ -9,3 +9,4 @@ max_length_title: 100
 max_length_rank: 255
 max_length_lang: 255
 expire_time: 2
+per_sheet: 5

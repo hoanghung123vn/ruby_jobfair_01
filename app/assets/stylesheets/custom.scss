@@ -36,8 +36,12 @@ p {
 
 /* forms */
 
-.signup {
-  margin-left: 100px
+.form_cn {
+  margin-left: 100px;
+  label {
+    margin: 15px 0;
+    font-weight: bold !important;
+  }
 }
 
 .user_info {
@@ -50,11 +54,20 @@ p {
   margin: 20px 0;
 }
 
-.button_cn {
-  text-align: center;
+.job_info {
+  h1, h5 {
+    color: $green;
+  }
 }
 
-input[type=radio] {
+.button_cn {
+  text-align: center;
+  a {
+      width: 200px;
+  }
+}
+
+.radio_btn {
   width: 10% !important;
 }
 
@@ -67,6 +80,11 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+select {
+  height: 40px;
+  border-radius: 5px;
 }
 
 /* header */

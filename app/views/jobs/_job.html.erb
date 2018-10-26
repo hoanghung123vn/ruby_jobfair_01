@@ -1,0 +1,25 @@
+<div class="col-sm-6 e-left">
+  <div class="e-desc">
+    <h6><%= link_to job.title, job %></h6>
+    <hr>
+    <ul class="desc-list">
+      <li>
+        <span><%= t ".company" %></span>
+        <%= jobs_new(job).name %>
+      </li>
+      <li>
+        <span><%= t ".salary" %></span>
+        <%= job.salary %>
+      </li>
+      <li>
+        <span><%= t ".experience" %></span>
+        <%= job.experience %>
+      </li>
+      <li>
+        <span><%= t ".expiration_date" %></span>
+        <%= job.expiration_date %>
+      </li>
+    </ul>
+    <%= link_to t(".apply"), "#", class: "btn wthree-bnr-btn text-capitalize" %>
+  </div>
+</div>

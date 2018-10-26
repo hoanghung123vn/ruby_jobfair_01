@@ -10,4 +10,13 @@ class Job < ApplicationRecord
     length: {maximum: Settings.max_length_lang}
   validates :experience, :description, presence: true
   validates :publish_date, :expiration_date, presence: true, date: true
+
+  scope :selected, ->{select :id, :title, :salary, :experience, :expiration_date}
+  scope :ordered, ->{order created_at: :desc}
+
+  class << self
+    def career_options
+      @career_options = Career.all.map{|p| [p.name, p.id]}
+    end
+  end
 end
