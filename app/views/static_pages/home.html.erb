@@ -1,7 +1,7 @@
 <% provide :title, t(".title") %>
 <section class="employ-sec">
   <div class="container">
-    <div class="title-sec-w3layouts_pvt text-center pb-4">
+    <div class="title-sec-w3layouts_pvt text-center pt-4">
       <span class="title-wthree">Quick Recruitment Jobs</span>
     </div>
     <div class="row pt-lg-5">
@@ -20,7 +20,9 @@
         <div class="row">
           <%= render @jobs %>
         </div>
-        <%= paginate @jobs, theme: "twitter-bootstrap-3" %>
+        <div class="row justify-content-center">
+          <%= paginate @jobs, theme: "twitter-bootstrap-3" %>
+        </div>
       </div>
     </div>
   </div>

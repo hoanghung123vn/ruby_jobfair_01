@@ -121,9 +121,24 @@ select {
   }
 }
 
+.search {
+  margin-top: 32px;
+}
+
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+.laguage {
+  img {
+    width: 30px;
+    height: 15px;
+  }
+}
+
+.title{
+  letter-spacing: 2px;
 }
 
 /* Users index */

@@ -1,7 +1,7 @@
 <header>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light p-0 navbar-static-top">
-      <h1><%= link_to t("base_title"), root_path, class: "navbar-brand" %></h1>
+      <h1 class="title"><%= link_to t("base_title"), root_path, class: "navbar-brand" %></h1>
       <button class="navbar-toggler ml-lg-auto ml-sm-5 bg-light" type="button"
         data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
@@ -15,12 +15,6 @@
           </li>
           <li class="nav-item  mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
             <%= link_to t("createJob"), new_job_path %>
-          </li>
-          <li class="nav-item mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
-            <li><%= link_to t(".language1"), locale: "en" %></li>
-          </li>
-          <li class="nav-item mr-lg-4 mt-lg-0 mt-sm-4 mt-3">
-            <li><%= link_to t(".language2"), locale: "vi" %></li>
           </li>
         </ul>
         <% if logged_in? %>
@@ -51,6 +45,14 @@
         <%= link_to t("signup"), signup_path, class: "btn w3ls-btn text-uppercase font-weight-bold d-block" %>
         <%= link_to t("login"), login_path, class: "btn w3ls-btn btn-2 ml-lg-1 text-uppercase font-weight-bold d-block" %>
         <% end %>
+        <div class="laguage">
+          <%= link_to locale: "en" do %>
+            <%= image_tag "en.png" %>
+          <% end %>
+          <%= link_to locale: "vi" do %>
+            <%= image_tag "vi.png" %>
+          <% end %>
+        </div>
       </div>
     </nav>
   </div>
@@ -58,31 +60,40 @@
 <div class="d-flex banner-w3pvt-bg1 common-bg header">
   <div class="d-flex mx-auto align-items-center justify-content-center flex-column">
     <div class="row justify-content-between bnr-form-w3ls">
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <h4><%= t "slogan" %></h4>
       </div>
-      <div class="col-lg-8">
-        <form action="job_list.html" method="post" class="bnr-field">
+      <div class="col-lg-9">
+        <%= form_with url: jobs_path, method: :get, id: "search-form", local: true do %>
           <div class="row">
+            <div class="col-md-3 form-group mb-md-0">
+              <label class="text-capitalize">
+                <%= t "find_by_career" %>
+              </label>
+              <%= text_field_tag :career_name, params[:career_name],
+                class: "form-control", placeholder: t("search_career") %>
+            </div>
             <div class="col-md-5 form-group mb-md-0">
+              <label class="text-capitalize">
+                <%= t "find_by_company" %>
+              </label>
+              <%= text_field_tag :company_name, params[:company_name],
+                class: "form-control", placeholder: t("search_company") %>
+            </div>
+            <div class="col-md-3 form-group mb-md-0">
               <label class="text-capitalize">
                 <%= t "find_by_job" %>
               </label>
-              <input class="form-control" type="text" name="name" required="">
+              <%= text_field_tag :job_info, params[:job_info],
+                class: "form-control", placeholder: t("search_job") %>
             </div>
-            <div class="col-md-5 mb-md-0 form-group">
-              <label class="text-capitalize">
-                <%= t "find_by_place" %>
-              </label>
-              <input class="form-control" type="text" name="place" required="">
-            </div>
-            <div class="col-md-2 d-flex align-items-end">
-              <button type="submit" class="btn btn-w3ltd btn-block w-100 bg-theme font-weight-bold text-uppercase"><span
+            <div class="col-md-1 form-group search">
+             <button type="submit" class="btn btn-w3ltd btn-block w-100 bg-theme font-weight-bold"><span
                 class="fa fa-search"></span>
               </button>
             </div>
           </div>
-        </form>
+        <% end %>
       </div>
     </div>
   </div>

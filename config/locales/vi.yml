@@ -5,15 +5,20 @@ vi:
   create_job: "Tạo tin tuyển dụng"
   signup: "Đăng ký"
   login: "Đăng nhập"
-  slogan: "Có nhiều công việc tốt hơn ở ngoài kia. Chúng tôi sẽ giúp bạn tìm kiếm dễ dàng."
+  slogan: "Chúng tôi sẽ giúp bạn tìm kiếm một công việc tốt hơn! Tìm kiếm ngay!"
   about: "Giới thiệu"
   contact: "Liên lạc"
   help: "Trợ giúp"
   address: "Địa chỉ"
   createCV: "Tạo CV"
   createJob: "Tạo Job"
-  find_by_job: "Tìm kiếm theo ngành nghề"
-  find_by_place: "Tìm kiếm theo vị trí"
+  find_by_company: "Công ty"
+  find_by_career: "Ngành nghề"
+  find_by_job: "Công việc"
+  search_career: "Ngành nghề"
+  search_company: "Tên công ty, địa điểm"
+  search_job: "Chức vụ, mức lương"
+  search: "Tìm việc"
   r_login: "Yêu cầu đăng nhập!"
   static_pages:
     home:
@@ -187,6 +192,9 @@ vi:
       select: "Chọn CV để nộp"
       choose_cv: "Chọn CV"
       apply: "Nộp"
+    index:
+      find_result: "Kết quả tìm kiếm"
+      not_found: "Không tìm thấy việc làm phù hợp"
   curriculum_vitaes:
     curriculum_vitae:
       created_at: "Tạo lúc"
@@ -278,3 +286,10 @@ vi:
       success: "Nộp CV thành công"
       failed: "Nộp CV thất bại"
       select_another_cv: "Bạn đã nộp CV này. Hãy chọn CV khác"
+  views:
+    pagination:
+      first: "&laquo;&laquo;"
+      last: "&raquo;&raquo;"
+      previous: "&lsaquo;&lsaquo;"
+      next: "&rsaquo;&rsaquo;"
+      truncate: "&hellip;"
