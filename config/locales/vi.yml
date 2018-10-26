@@ -138,7 +138,7 @@ vi:
       salary: "Lương"
       experience: "Kinh nghiệm"
       expiration_date: "Thời hạn"
-      apply: "Nộp hồ sơ"
+      detail: "Chi tiết"
     update:
       error: "Cập nhật việc làm thất bại"
       success: "Cập nhật việc làm thành công"
@@ -180,6 +180,13 @@ vi:
       update: "Cập Nhật"
       delete: "Xóa"
       user_employeer: "Không tìm thấy nhà tuyển dụng"
+      apply: "Nộp CV"
+      r_login: "Đăng nhập để nộp CV"
+      select_cv: "Chọn CV của bạn"
+    apply:
+      select: "Chọn CV để nộp"
+      choose_cv: "Chọn CV"
+      apply: "Nộp"
   curriculum_vitaes:
     curriculum_vitae:
       created_at: "Tạo lúc"
@@ -213,6 +220,7 @@ vi:
       delete: "Xóa"
       not_found: "Không tìm thấy CV"
       sure: "Xác nhận?"
+      applied: Đã nộp CV này tới các công ty"
     edit:
       title: "Cập nhật CV"
       update: "Cập nhật"
@@ -265,3 +273,8 @@ vi:
   will_paginate:
     previous_label: "Trước"
     next_label: "Sau"
+  user_curriculum_vitaes:
+    create:
+      success: "Nộp CV thành công"
+      failed: "Nộp CV thất bại"
+      select_another_cv: "Bạn đã nộp CV này. Hãy chọn CV khác"

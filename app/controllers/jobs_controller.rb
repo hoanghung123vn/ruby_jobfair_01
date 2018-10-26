@@ -23,6 +23,8 @@ class JobsController < ApplicationController
 
   def show
     @user = @job.users.find_by role: "employeer"
+    @cv_options = Job.cv_options current_user
+    @user_cv = @user.user_curriculum_vitaes.build
 
     return if @user
     flash[:danger] = t ".user_employeer"

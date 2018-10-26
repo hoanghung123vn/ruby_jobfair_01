@@ -19,5 +19,9 @@ class Job < ApplicationRecord
     def career_options
       @career_options = Career.all.map{|p| [p.name, p.id]}
     end
+
+    def cv_options user
+      @cv_options = user.curriculum_vitaes.map{|p| [p.target, p.id]}
+    end
   end
 end
