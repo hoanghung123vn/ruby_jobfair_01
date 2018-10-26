@@ -1,6 +1,5 @@
 vi:
-  applications:
-    login: "Vui lòng đăng nhập"
+  r_login: "Vui lòng đăng nhập"
   base_title: "Tìm việc làm"
   create_cv: "Tạo hồ sơ"
   create_job: "Tạo tin tuyển dụng"
@@ -25,13 +24,16 @@ vi:
       employeer: "Nhà tuyển dụng"
       candidate: "Ứng viên"
     show:
-      info: "Thông Tin"
+      info: "Thông Tin Cá Nhân"
+      name: "Họ tên"
       email: "Email"
       birthday: "Ngày sinh"
       gender: "Giới tính"
       phone: "Số điện thoại"
       address: "Địa chỉ"
       myCV: "CV của tôi"
+      myJob: "Việc làm đã đăng"
+      not_found: "Không tìm thấy người dùng!"
     new:
       signup: "Đăng kí"
       role: "Vai trò"
@@ -51,8 +53,6 @@ vi:
     create:
       error: "Tạo tài khoản thất bại"
       success: "Tạo tài khoản thành công"
-    find_user:
-      not_found: "Không tìm thấy người dùng!"
   error:
     contain: "Có"
     errors: "lỗi"
@@ -92,7 +92,7 @@ vi:
       submit: "Gửi"
   user_mailer:
     account_activation:
-      hi:  "Chào"
+      hi: "Chào"
       click_to_activate: "Nhấp chuột để kích hoạt tài khoản của bạn"
       activate: "Kích hoạt"
     password_reset:
@@ -128,9 +128,57 @@ vi:
       expiration_date: "Ngày hết hạn"
       create_job: "Tạo việc làm"
       choose_career: "Chọn ngành nghề"
+      not_permit: "Bạn không đủ quyền truy cập"
     create:
       error: "Tạo việc làm thất bại"
       success: "Tạo việc làm thành công"
+    job:
+      company: "Công ty"
+      salary: "Lương"
+      experience: "Kinh nghiệm"
+      expiration_date: "Thời hạn"
+      apply: "Nộp hồ sơ"
+    update:
+      error: "Cập nhật việc làm thất bại"
+      success: "Cập nhật việc làm thành công"
+    destroy:
+      error: "Xóa việc làm thất bại"
+      success: "Xóa việc làm thành công"
+    edit:
+      update_job: "Cập nhật thông tin việc làm"
+      update_btn: "Cập nhật việc làm"
+      title: "Tiêu đề"
+      career_id: "Ngành nghề"
+      salary: "Mức lương"
+      rank: "Chức vụ"
+      skill: "Kỹ năng"
+      language: "Ngôn ngữ"
+      amount: "Số lượng"
+      experience: "Kinh nghiệm"
+      description: "Mô tả"
+      publish_date: "Ngày đăng tin"
+      expiration_date: "Ngày hết hạn"
+      create_job: "Tạo việc làm"
+      choose_career: "Chọn ngành nghề"
+    show:
+      company: "Công ty"
+      career: "Ngành nghề"
+      salary: "Mức lương"
+      rank: "Chức vụ"
+      skill: "Kỹ năng"
+      language: "Ngôn ngữ"
+      amount: "Số lượng"
+      experience: "Kinh nghiệm"
+      description: "Mô tả"
+      publish_date: "Ngày đăng tin"
+      expiration_date: "Ngày hết hạn"
+      phone: "Số điện thoại"
+      address: "Địa chỉ"
+      not_found: "Không tìm thấy công việc!"
+      sure: "Bạn có chắc chắn muốn xóa công việc này?"
+      update: "Cập Nhật"
+      delete: "Xóa"
+      user_employeer: "Không tìm thấy nhà tuyển dụng"
   curriculum_vitaes:
     curriculum_vitae:
       created_at: "Tạo lúc"

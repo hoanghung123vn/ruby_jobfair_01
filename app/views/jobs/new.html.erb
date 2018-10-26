@@ -7,7 +7,7 @@
       <%= render "shared/error_messages", object: f.object %>
 
       <%= f.label :title, t(".title") %>
-      <%= f.text_area :title, class: "form-control", placeholder: "abc" %>
+      <%= f.text_area :title, class: "form-control" %>
 
       <%= f.label :career_id, t(".career_id") %>
       <%= f.select :career_id, options_for_select(@career_options),
