@@ -78,6 +78,7 @@ en:
       log_in: "Log in"
       manager: "Manager"
       add_career: "Add career"
+      careers: "Careers"
   password_resets:
     edit:
       reset_pwd: "Reset Passsword"
@@ -241,3 +242,25 @@ your password will stay as it is."
       career_name: "Career name"
       description: "Description"
       create_career: "Create career"
+    show:
+      not_found_careers: "Not found careers"
+      description: "Description: "
+    destroy:
+      delete_success: "Delete success"
+      delete_fail: "Delete fail"
+    index:
+      career_list: "Career list"
+      delete: "Delete"
+      confirm: "Confirm"
+      edit: "Edit"
+    edit:
+      edit_career: "Edit career"
+      career_name: "Career name"
+      description: "Description"
+      update: "Update"
+    update:
+      update_success: "Update success!"
+      update_fail: "Update fail"
+  will_paginate:
+    previous_label: "Previous"
+    next_label: "Next"
