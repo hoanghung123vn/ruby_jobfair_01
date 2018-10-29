@@ -3,12 +3,20 @@ class JobsController < ApplicationController
     only: %i(new create edit update destroy)
   before_action :find_job, only: %i(show edit update destroy)
 
+  def index
+    @jobs = Job.ordered.page(params[:page]).per Settings.per_sheet
+    %w(career_name company_name job_info).each do |p|
+      search_job p, @jobs
+    end
+  end
+
   def new
     @career_options = Job.career_options
     @job = current_user.jobs.new
   end
 
   def create
+    @career_options = Job.career_options
     @job = current_user.jobs.build job_params
 
     if @job.save
@@ -23,6 +31,8 @@ class JobsController < ApplicationController
 
   def show
     @user = @job.users.find_by role: "employeer"
+
+    return unless logged_in?
     @cv_options = Job.cv_options current_user
     @user_cv = @user.user_curriculum_vitaes.build
 
@@ -68,6 +78,12 @@ class JobsController < ApplicationController
     return if current_user.employeer?
     flash[:danger] = t ".not_permit"
     redirect_to root_path
+  end
+
+  def search_job option, job
+    return unless params[option].present?
+    @jobs = job.send(option, params[option]).ordered.page(params[:page])
+               .per Settings.per_sheet
   end
 
   def job_params

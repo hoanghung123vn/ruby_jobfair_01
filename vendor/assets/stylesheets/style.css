@@ -214,11 +214,7 @@ header {
 .banner-w3pvt-bg1 {
 	background: url(inner.jpg) no-repeat center top;
 	background-size: cover;
-}
-
-.banner-w3pvt-bg2 {
-	background: url(bg2.jpg) no-repeat center;
-	background-size: cover;
+	height: 500px !important;
 }
 
 .banner-w3pvt-bg3 {
@@ -287,6 +283,7 @@ header {
 	border: 7px solid rgba(20, 18, 19, 0.2);
 	margin-top: 5em;
 	border-radius: 30px;
+	margin: 0 5px;
 }
 
 .wthree-bnr-btn {
@@ -858,10 +855,6 @@ h3.left-widget-job {
 	margin-bottom: 1.5em;
 }
 
-section.employ-sec {
-	padding: 5em 0;
-}
-
 form.widget-content select {
 	text-transform: capitalize;
 	font-size: 1em;
@@ -894,7 +887,7 @@ ul.pagination li a {
 	height: 40px;
 	background: #eee;
 	text-align: center;
-	margin: 0 10px;
+	margin: 5px 10px;
 	line-height: 40px;
 	display: inline-block;
 	border-radius: 50%;
