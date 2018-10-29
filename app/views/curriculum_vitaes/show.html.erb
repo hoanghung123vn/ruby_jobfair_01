@@ -1,9 +1,10 @@
 <% provide :title, @curriculum_vitae.target %>
-<div >
+<div>
   <div class="container">
-    <h1><%= @curriculum_vitae.target %></h1>
     <div class="row">
-      <div class="col-md-6 curriculum_vitae_info">
+      <div class="col-md-8 curriculum_vitae_info">
+        <h1><%= @curriculum_vitae.target %></h1>
+
         <h5><%= t ".name" %></h5><hr>
         <p><%= @user.name %></p><br>
 
@@ -18,8 +19,7 @@
 
         <h5><%= t ".address" %></h5><hr>
         <p><%= @user.address %></p><br>
-      </div>
-      <div class="col-md-6">
+
         <h5><%= t ".target" %></h5><hr>
         <p><%= @curriculum_vitae.target %></p><br>
 
@@ -37,16 +37,25 @@
 
         <h5><%= t ".note" %></h5><hr>
         <p><%= @curriculum_vitae.note %></p><br>
+
+        <div class="button_cn">
+        <% if @user.current_user? current_user %>
+          <%= link_to t(".update"), edit_curriculum_vitae_path,
+            class: "btn btn-lg btn-success" %>
+          <%= link_to t(".delete"), @curriculum_vitae, method: :delete,
+            data: {confirm: t(".sure")}, class: "btn btn-lg btn-danger" %>
+        <% end %>
+      </div>
+      </div>
+      <div class="col-md-4">
+        <% if @user.candidate? %>
+          <h3><%= t ".applied" %> (<%= @applieds.count %>)</h3>
+          <ol class="cv">
+            <%= render @applieds %>
+          </ol>
+        <% end %>
       </div>
 
-    </div>
-    <div class="button_cn">
-      <% if @user.current_user? current_user %>
-      <%= link_to t(".update"), edit_curriculum_vitae_path,
-       class: "btn btn-lg btn-success" %>
-      <%= link_to t(".delete"), @curriculum_vitae, method: :delete,
-       data: {confirm: t(".sure")}, class: "btn btn-lg btn-danger" %>
-      <% end %>
     </div>
   </div>
 </div>

@@ -13,9 +13,9 @@ class CurriculumVitaesController < ApplicationController
 
     if @curriculum_vitae.save
       @curriculum_vitae.user_curriculum_vitaes.create! user_id: current_user.id,
-       curriculum_vitae_id: @curriculum_vitae.id
+        curriculum_vitae_id: @curriculum_vitae.id
       flash[:success] = t ".success"
-      redirect_to root_url
+      redirect_to @curriculum_vitae
     else
       flash[:danger] = t ".fail"
       render :new
@@ -24,6 +24,7 @@ class CurriculumVitaesController < ApplicationController
 
   def show
     @user = @curriculum_vitae.users.find_by role: "candidate"
+    @applieds = @curriculum_vitae.users.employeer
   end
 
   def edit; end

@@ -137,7 +137,7 @@ your password will stay as it is."
       salary: "Salary"
       experience: "Experience"
       expiration_date: "Expire"
-      apply: "Apply for Job"
+      detail: "Detail"
     update:
       error: "Update career fail"
       success: "Update career success"
@@ -179,6 +179,13 @@ your password will stay as it is."
       update: "Update"
       delete: "Delete"
       user_employeer: "Not found employeer"
+      apply: "Apply for job"
+      r_login: "Login to apply CV"
+      select_cv: "Select your CV"
+    apply:
+      select: "Select your CV to apply"
+      choose_cv: "Choose CV"
+      apply: "Apply"
   curriculum_vitaes:
     curriculum_vitae:
       create_at: "Created at"
@@ -212,6 +219,7 @@ your password will stay as it is."
       delete: "Delete"
       not_found: "Not found CV"
       sure: "Sure?"
+      applied: "Applied to employeers"
     edit:
       title: "Update CV"
       update: "Update"
@@ -264,3 +272,8 @@ your password will stay as it is."
   will_paginate:
     previous_label: "Previous"
     next_label: "Next"
+  user_curriculum_vitaes:
+    create:
+      success: "Apply success"
+      failed: "Apply failed"
+      select_another_cv: "You applied this CV. Please select another CV"

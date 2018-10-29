@@ -1,5 +1,5 @@
 class CareersController < ApplicationController
-  before_action :find_career only: [:show, :edit, :update, :destroy]
+  before_action :find_career, only: %i(show edit update destroy)
 
   def index
     @careers = Career.page(params[:page]).per Settings.per_sheet
@@ -42,11 +42,10 @@ class CareersController < ApplicationController
   def destroy
     if @career.destroy
       flash[:success] = t ".delete_success"
-      redirect_to careers_path
     else
       flash[:danger] = t ".delete_fail"
-      redirect_to careers_path
     end
+    redirect_to career_path
   end
 
   private

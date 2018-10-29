@@ -16,5 +16,6 @@ Rails.application.routes.draw do
     resources :password_resets, only: [:new, :create, :edit, :update]
     resources :jobs
     resources :curriculum_vitaes
+    resources :user_curriculum_vitaes
   end
 end
